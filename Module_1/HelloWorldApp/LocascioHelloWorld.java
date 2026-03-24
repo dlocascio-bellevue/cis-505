@@ -1,5 +1,5 @@
 /*
-    Locascio, D. (2025). CIS 505 Intermediate Java Programming. Bellevue University.
+    Locascio, D. (2026). CIS 505 Intermediate Java Programming. Bellevue University.
 */
 
 public class LocascioHelloWorld {
