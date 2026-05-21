@@ -1,0 +1,100 @@
+# FutureValueApp
+
+---
+
+## Software Versions Used
+
+- **Java:** 17.0.19  
+- **JavaFX:** 17.0.19  
+
+---
+
+## Project Structure
+
+```
+FutureValueApp/
+│
+├── src/
+│   └── FutureValueApp/
+│       └── LocascioFutureValueApp.java
+│
+├── bin/                                <-- Compiled .class files will be placed here
+│   └── FutureValueApp/
+│       └── LocascioFutureValueApp.class
+│
+└── .vscode/
+    ├── settings.json
+    └── launch.json
+
+```
+
+---
+
+## How to Run the Application
+
+### 1. Install Prerequisites
+
+Before running the application, ensure the following are installed:
+
+- **Java 17 (JDK 17)**
+- **JavaFX SDK 17.0.19**
+
+Extract JavaFX to:
+ `C:\Program Files\Java\javafx-sdk-17.0.19\`
+
+---
+
+## 2. Compile the Application (Command Line)
+
+From the project root (`FutureValueApp/`), compile the source files into the `bin/` directory:
+`javac -d bin --module-path "C:/Program Files/Java/javafx-sdk-17.0.19/lib" --add-modules javafx.controls,javafx.fxml src/FutureValueApp/*.java`
+
+This will generate:
+- bin/
+- FutureValueApp/
+- LocascioFutureValueApp.class
+
+---
+
+## 3. Run the Application (Command Line)
+
+After compiling, run the JavaFX application using:
+`java --module-path "C:/Program Files/Java/javafx-sdk-17.0.19/lib" --add-modules javafx.controls,javafx.fxml -cp bin FutureValueApp.LocascioFutureValueApp`
+
+---
+
+## 4. Running the Application in VS Code
+
+1. Open the project folder in VS Code  
+2. Open `LocascioFutureValueApp.java`  
+3. Click the **Run** button (green triangle)
+
+### VS Code Configuration Requirements
+
+#### `.vscode/settings.json`
+Ensure VS Code points to the JavaFX library:
+`C:/Program Files/Java/javafx-sdk-17.0.19/lib/*.jar`
+
+#### `.vscode/launch.json`
+Ensure JavaFX modules are added at runtime:
+`--module-path "C:/Program Files/Java/javafx-sdk-17.0.19/lib" --add-modules javafx.controls,javafx.fxml`
+
+---
+
+## 5. Creating the JAR File (For Submission)
+
+After compiling, create the JAR file using:
+`jar --create --file FutureValueApp.jar --main-class FutureValueApp.LocascioFutureValueApp -C bin/ .`
+
+### Run the JAR
+`java --module-path "C:/Program Files/Java/javafx-sdk-17.0.19/lib" --add-modules javafx.controls,javafx.fxml -jar FutureValueApp.jar`
+
+---
+
+## Notes
+
+- The JAR file does **not** include JavaFX libraries.  
+- JavaFX must be installed on the system running the JAR.  
+- The application must be launched with the JavaFX module path (as shown above).
+
+---

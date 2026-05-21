@@ -1,0 +1,13 @@
+{
+    "java.debug.settings.hotCodeReplace": "auto",
+    "java.debug.settings.console": "integratedTerminal",
+    "java.debug.settings.forceBuildBeforeLaunch": true,
+
+    // JavaFX SDK path
+    "java.project.referencedLibraries": [
+        "C:/Program Files/Java/javafx-sdk-17.0.19/lib/*.jar"
+    ],
+    "java.project.sourcePaths": [
+        "src"
+    ]
+}
