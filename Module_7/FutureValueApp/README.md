@@ -84,7 +84,7 @@ Ensure JavaFX modules are added at runtime:
 ## 5. Creating the JAR File (For Submission)
 
 After compiling, create the JAR file using:
-`jar --create --file FutureValueApp.jar --main-class FutureValueApp.LocascioFutureValueApp -C bin/ .`
+`jar --create --file LocascioFutureValueApp.jar --main-class FutureValueApp.LocascioFutureValueApp -C bin/ .`
 
 ### Run the JAR
 `java --module-path "C:/Program Files/Java/javafx-sdk-17.0.19/lib" --add-modules javafx.controls,javafx.fxml -jar FutureValueApp.jar`
